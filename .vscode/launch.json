@@ -1,0 +1,28 @@
+{
+    // Utilisez IntelliSense pour en savoir plus sur les attributs possibles.
+    // Pointez pour afficher la description des attributs existants.
+    // Pour plus d'informations, visitez : https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Pytest Daemon",
+            "type": "python",
+            "request": "launch",
+            "module": "pytest",
+            "justMyCode": false,
+            "args": [
+                "--daemon",
+                //
+                // everything below this is optional
+                //
+                "--daemon-port",
+                "4852", // the default value
+                "--daemon-watch-globs",
+                "./*.py", // the default value
+                // "./my-project/*.py:./some-thing-else/*.py",  // example of colon separated globs
+                "--daemon-ignore-watch-globs",
+                "./.venv/*" // this is the default value, also colon separated globs
+            ]
+        }
+    ]
+}

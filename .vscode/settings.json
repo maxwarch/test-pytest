@@ -1,0 +1,10 @@
+{
+  "emmet.triggerExpansionOnTab": true,
+  "editor.tabSize": 4,
+  "python.testing.pytestArgs": [
+    "--cov=source --cov-report term-missing tests/"
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true
+}
+// pytest --cov=source tests/ --cov-report term-missing
